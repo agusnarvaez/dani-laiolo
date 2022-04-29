@@ -1,6 +1,6 @@
 import '../App.css';
 import Header from './Header';
-import Footer from './Footer';
+
 import Home from '../pages/Home.js'
 import Projects from '../pages/Projects';
 import Project from '../pages/Project';
@@ -8,7 +8,14 @@ import NotFound404 from '../pages/NotFound404';
 import AboutMe from '../pages/AboutMe'
 import Contact from '../pages/Contact';
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
+
+
+import React, { useEffect, useState } from "react";
+
+
 function App() {
+
+
   return (
     <BrowserRouter>
       <Header />
@@ -20,7 +27,7 @@ function App() {
         <Route path='/contact' element={<Contact />} />
         <Route path='*' element={<NotFound404 />} />
       </Routes>
-      <Footer />
+
     </BrowserRouter>
   );
 }
