@@ -160,9 +160,9 @@ main{
     
     .contactCover img {
         display: block;
-        min-height: 100%;
-        width: auto;
-        
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
     }
 }
 
