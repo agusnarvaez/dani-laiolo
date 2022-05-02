@@ -28,27 +28,28 @@ body{
 }
 
 .cover{
-    position: relative;
-    top: 0;
-    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    /* top: 0;
+    left: 0; */
     z-index: -1;
-    display: block;
     width: 100vw;
     height: 100vh;
-    margin: auto;
-    text-align: center;
     overflow: hidden;
-    /* border: 5px solid black; */
-
 }
 
 .coverImg{
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
     display: block;
-    
-    /*height: auto; */
-/*     display: block;
-    margin: auto; */
+    /* min-width: 100%; */
+    min-height: 100vh;
+    width: auto;
+}
+
+@media (min-width: 1024px) {
+    .coverImg{
+    min-width: 100vw;
+    height: auto;
+    }
 }

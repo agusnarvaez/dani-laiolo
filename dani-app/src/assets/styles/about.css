@@ -55,7 +55,8 @@
     overflow: hidden;
 }
 .aboutCover img{
-    width: 100vw;
+    display: block;
+    width: auto;
     height: 100vh;
 }
 
@@ -91,11 +92,6 @@
     .about p {
         font-weight: bold;
         font-size: 1.1em;
-    }
-
-    .aboutCover {
-        width: 60%;
-        height: 100%;
     }
     
 

@@ -1,0 +1,13 @@
+* {
+    font-size: 12px;
+    font-family: 'Avenir Next Ultra Light';
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    color: #422D05;
+}
+
+.projectsPage{
+    width: 100vw;
+    height: 100vh;
+}

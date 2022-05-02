@@ -28,7 +28,7 @@ function Contact() {
             <div className="formContainer">
 
                 <form onSubmit={handleSubmit}>
-                    <h1> Contacto</h1>
+                    <h2> Contacto</h2>
                     <input
                         required
                         type="text"

@@ -39,7 +39,7 @@ main{
         
     }
     
-    .formContainer h1 {
+    .formContainer h2 {
         width: 100%;
         font-family: Avenir;
         font-size: 2.2em;
@@ -153,21 +153,21 @@ main{
         width: 60%;
         height: 100%;
         overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     
     .contactCover img {
-        min-width: 100%;
-        height: 100%;
-        position: absolute;
-        bottom: 0;
-        right: 0;
+        display: block;
+        min-height: 100%;
+        width: auto;
+        
     }
-
-
-
 }
 
 @media (min-width: 1024px) {
+    
     .formContainer{
         padding-top: 15vh;
         padding-bottom: 5vh;
@@ -186,7 +186,7 @@ main{
         align-items: center;
         flex-wrap: wrap;
     }
-    .formContainer h1{
+    .formContainer h2{
         width: 100%;
         font-family: Avenir;
         font-size: 2.2em;
@@ -275,22 +275,13 @@ main{
         display: block;
     }
     .socialLogo{
-        width: 7%;
+        width: 10%;
     }
     .socials img{
         justify-self: center;
         height: 100%;
     }
 
-    .contactCover{
-        width: 60%;
-        height: 100%;
-        overflow: hidden;
-    }
-    .contactCover img{
-        min-width: 100%;
-        height: 100%;
-    }
 
 
 }
