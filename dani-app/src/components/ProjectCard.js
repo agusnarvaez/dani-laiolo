@@ -1,15 +1,31 @@
 
-import { useParams, Link } from 'react-router-dom'
+import { useParams, NavLink } from 'react-router-dom'
 import React, { useEffect, useState } from "react";
 
-function Project(props) {
+function ProjectCard(props) {
+    useEffect(() => { })
+
+
 
     return (
         <div className="projectCard">
-            <h2>Proyecto</h2>
+            <img
+                className="projectCover"
+                src={props.cover}
+            />
+            <div className="projectTitle">
+                <h3>{props.title.toUpperCase()}</h3>
+                <NavLink
+                    className="projectLink"
+                    to={`/projects/${Number(props.id) + 1}`}
+                >
+                    <p>Ver más</p>
+                    <img src="../assets/images/icons/rightArrow.svg" />
+                </NavLink>
+            </div>
         </div>
 
     )
 }
 
-export default Project;
+export default ProjectCard;

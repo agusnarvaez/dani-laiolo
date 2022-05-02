@@ -6,16 +6,21 @@ import React, { useEffect, useState } from "react";
 import "../assets/styles/projects.css"
 function Projects() {
     const [projectsList, setProjectsList] = useState(list);
-    let [projectCard, setProjectCard] = useState([]);
+    let [projects, setProjects] = useState([]);
     useEffect(() => {
-        setProjectCard(
-            projectsList.map(project => { return <ProjectCard project={project} /> })
+        setProjects(
+            projectsList.map((project, i) => {
+                return (
+                    <ProjectCard
+                        {...project}
+                        key={i}
+                    />)
+            })
         )
-    })
+    }, [])
     return (
         <div className="projectsPage">
-            {/* <ProjectList /> */}
-
+            {projects}
         </div>
 
     )
