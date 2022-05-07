@@ -22,7 +22,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path='/about' element={<AboutMe />} />
-        <Route path='/projects' element={<Projects />} />
+        <Route path='/projects/list' element={<Projects />} />
         <Route path='/projects/:id' element={<Project />} />
         <Route path='/contact' element={<Contact />} />
         <Route path='*' element={<NotFound404 />} />

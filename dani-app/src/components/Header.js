@@ -7,7 +7,7 @@ function Header() {
             <h1>DANIELA LAIOLO</h1>
             <ul>
                 <li><NavLink className={({ isActive }) => (isActive ? "navLink active" : "navLink")} to='/' exact="true">Inicio</NavLink></li>
-                <li><NavLink to='/projects' >Proyectos</NavLink></li>
+                <li><NavLink to='/projects/list' >Proyectos</NavLink></li>
                 <li><NavLink to='/about'>Sobre Mi</NavLink></li>
                 <li><NavLink to='/contact' >Contacto</NavLink></li>
             </ul>
